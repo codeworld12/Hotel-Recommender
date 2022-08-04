@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/PopUp.css">
+    <link rel="stylesheet" href="/static/Package.css">
+    <link rel="stylesheet" href="/static/Luxury.css">
+    <link rel="stylesheet" href="/static/Rectangle.css">
+    <title>Hotel Recommender</title>
+    <style>
+        /* KJ CSS */
+ 
+
+        #sec {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        #box {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 15px 10px 10px;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #box img {
+            width: 1200px;
+            height: 425px;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: 50% 50%;
+            object-fit: cover;
+        }
+
+        #box h1 {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        /* endd */
+    </style>
+</head>
+
+<body>
+    {% block content %}
+    <!-- //popup page -->
+    <div id="popup">
+        <div class="overlay">
+            <div class="data">
+                <button type="button" class="close" value="close">X</button>
+                <div class="First-imag" id="firsst">
+                    <div class="left">
+                        <img src="/static/images/Picture03.jpg" id="hotel-img" alt="hotel">
+                    </div>
+                    <div class="right">
+                        <p id="To">Tours & Travels</p>
+                        <p id="Too">Your dream’s is our responsibility to fulfill</p>
+                        <p id="Tooo">This vacation bring’s joy & happiness </p>
+                        <p id="Toooo">An Exciting offer is waiting for you 30% off</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="boxx">
+        <section id="sec">
+            <div id="box">
+                <!-- <img src="images/marvin-meyer-8CDuHXff3zo-unsplash.jpg" alt="Home page"> -->
+                <img src="/static/images/tatsaraasa-resort-spa.jpg" alt="">
+                <h1>HOTEL RECOMMENDER</h1>
+            </div>
+
+            <!-- Rectangle -->
+            <form action="/Hotel" method="post">
+                <div class="rect-box">
+                    <div class="loc">
+                        <img id="locc" src="https://img.icons8.com/ios/25/000000/marker--v1.png" />
+                        <input type="text" id="Search" name="location" placeholder="Search Your Hotel" required>
+                        <!-- <a class="search-btn" href="#">
+                            <img src="https://img.icons8.com/ios/30/000000/search--v4.png" class="search" /></a> -->
+                    </div>
+                    <div class="paise">
+                        <img id="rup-rupees" src="https://img.icons8.com/material-sharp/24/000000/rupee.png" />
+                        <div class="sel">
+                            <select id="opt" name="rate">
+                                <option value="1000">1000</option>
+                                <option value="2000">2000</option>
+                                <option value="3000">3000</option>
+                                <option value="4000">4000</option>
+                                <option value="5000">5000</option>
+                                <option value="6000">6000</option>
+                                <option value="7000">7000</option>
+                                <option value="8000">8000</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="ratg">
+                        <p><label for="customRange" class="form-label" required>Rating</label>
+                            <input type="range" name="range" class="form-range" id="customRange" min="1" max="5"
+                                required>
+                        </p>
+                    </div>
+                </div>
+                <button type="submit" id="search">Search</button>
+            </form>
+
+            <!-- SG LUXURY PAGE -->
+
+            <div class="lux">
+                <h1 class="best">Best Luxuries Hotel</h1>
+                <div class="Restan">
+                    <div class="mag">
+                        <img src="/static/images/Picture08.jpg" id="lux" alt="Luxuries">
+                        <img src="/static/images/Picture07.jpg" id="lux" alt="Luxuries">
+                        <img src="/static/images/Picture06.jpg" id="lux" alt="Luxuries">
+                    </div>
+                    <div class="sent">
+                        <p class="mal">Maldive</p>
+                        <p class="club">Club Emerald</p>
+                        <p class="cap">Capella</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- popup JS -->
+    <script>
+        var closebtns = document.getElementsByClassName("close");
+        var close = document.getElementById("popup")
+        window.addEventListener('load', () => {
+            close.style.display = "flex";
+        })
+
+        closebtns[0].addEventListener('click', (e) => {
+            e.preventDefault()
+            close.style.display = "none"
+        }) </script>
+    {% endblock %}
+</body>
+
+</html>

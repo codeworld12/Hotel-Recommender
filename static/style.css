@@ -1,0 +1,121 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* KJ Upper CSS */
+#sec {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#box {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#box img {
+    width: 1200px;
+    height: 329px;
+    border-radius: 10px;
+}
+
+#box h1 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form-label{
+    padding: 2px 20px 2px 0px;
+}
+
+.form-range{
+    width: 90px;
+}
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
+.container{
+    display: flex;
+    height: 355px;
+    width: 1324px;
+    margin: 65px 100px;
+    background-color: #00B4D8;
+    border: 1px solid;
+    box-shadow: 4px 5px 5px 4px #CAF0F8;
+    
+
+}
+.gmim {
+    display: flex;
+    flex-direction: column;
+}
+.gmim img{
+    width: 414px;
+    height: 330px;
+    margin: 9px 12px 10px 10px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+h4{
+    position: absolute;
+    top: 0px;
+    margin: 834px 0px 20px 40px;
+    font-size: 28px;
+    color: aliceblue;
+}
+.hotels{
+    display: flex;
+    flex-direction: row;
+    height: 352px;
+}
+.gmi img{
+    border: 1px solid;
+    width: 265px;
+    height: 265px;
+    margin: 26px 18px 11px 10px;
+    border-radius: 8px;
+}
+.leng {
+    background: #E8F8FC;
+}
+.money{
+    margin: 2px 0px 2px 40px;
+}
+.hotelname h5{
+    display: flex;
+    margin: 2px;
+    padding: 5px 0px 5px 12px;
+}
+.hotelname{
+    display: flex;
+    flex-direction: row;
+    width: 245px;
+    font-size: 24px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: -7px 2px 2px 19px;
+    height: 34px;
+}
+#Go {
+    position: absolute;
+    top: 0px;
+    margin: 1327px 0px 0px 45px;
+}

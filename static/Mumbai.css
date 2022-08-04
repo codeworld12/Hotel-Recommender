@@ -1,0 +1,80 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 355px;
+    width: 1324px;
+    margin: 65px 10px;
+    background-color: #b9d3ff;
+    border: 1px solid;
+    box-shadow: 4px 5px 5px 4px #9cabe5;
+}
+
+.gmim {
+    display: flex;
+    flex-direction: column;
+}
+
+.gmim img {
+    width: 399px;
+    height: 330px;
+    margin: 10px 30px 10px 10px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+h4 {
+    position: absolute;
+    top: 0px;
+    margin: 298px 0px 20px 40px;
+    font-size: 28px;
+    color: aliceblue;
+}
+
+.leng {
+    background: aliceblue;
+}
+
+.hotels {
+    display: flex;
+    flex-direction: row;
+    height: 352px;
+}
+
+.gmi img {
+    width: 265px;
+    height: 265px;
+    margin: 26px 18px 11px 10px;
+    border-radius: 8px;
+}
+
+.hotelname {
+    display: flex;
+    flex-direction: row;
+    width: 245px;
+    font-size: 24px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: -7px 2px 2px 19px;
+    height: 34px;
+}
+
+.money {
+    margin: 2px 0px 2px 40px;
+}
+
+.hotelname h5 {
+    display: flex;
+    margin: 2px;
+    padding: 5px 0px 5px 12px;
+}
+
+#Go {
+    position: absolute;
+    top: 0px;
+    margin: 678px 0px 0px 45px;
+}

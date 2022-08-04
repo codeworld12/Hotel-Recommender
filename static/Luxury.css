@@ -1,0 +1,57 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.lux {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #48CAE4;
+    margin: 50px 10px;
+}
+
+.Restan {
+    display: flex;
+    background-color: #CAF0F8; 
+}
+
+.best {
+    margin: 10px 0px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.mag {
+    justify-content: center;
+    margin-left: -20px;
+    display: flex;
+}
+
+#lux {
+    height: 275px;
+    width: 355px;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+.sent {
+    color: aliceblue;
+    font-size: 28px;
+}
+
+.mal {
+    position: absolute;
+    left: 110px;
+    margin-top: 270px;
+}
+.club{
+    position: absolute;
+    left: 600px;
+    margin-top: 270px;
+}
+.cap{
+    position: absolute;
+    left: 1080px;
+    margin-top: 270px;
+}

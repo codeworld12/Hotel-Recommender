@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/Package.css">
+    <title>Package of Hotel</title>
+</head>
+
+<body>
+    <section id="main-branch">
+        {% for i in res %}
+        <div class="First-Package">
+            <div class="top-in">
+                <div class="top-imag">
+                    <img src={{"/static/images/Picture0" +range(1,8)| random| string() + ".jpg"}} id="pack" alt="Rest palce">
+                </div>
+                <div class="top">
+                    <p class="head-line">{{i[1]}}</p>
+                    <p class="top-rating">Rating {{i[6]}}</p>
+                    <p class="left-side1">
+                        <!-- <img id="bed" src="https://img.icons8.com/ios/40/000000/4-star-hotel--v2.png" /> -->
+                        <img id="dis" src="/static/images/discount.png">
+                        <span id="star">
+                            Discount {{i[5]}}
+                        </span>
+                    </p>
+                    <p class="left-side2">
+                        <!-- <img id="wifi" src="https://img.icons8.com/ios/40/000000/wifi.png" /> -->
+                        <img id="bell" src="/static/images/service.png">
+                        <!-- <img src="https://icons8.com/icon/7556/service-bell" > -->
+                        <!-- <a target="_blank" href="https://icons8.com/icon/7556/service-bell">Service Bell</a> icon by <a
+                            target="_blank" href="https://icons8.com">Icons8</a> -->
+                    <p id=Wi>{{i[4]}}</p>
+                    </p>
+
+                    <p class="left-side3">
+                        <img id="location" src="https://img.icons8.com/ios/35/000000/marker--v1.png" />
+                    <p id="beach">{{i[2]}}</p>
+                    </p>
+                    <div class="roo">
+                        <p class="right-side1"><img id="rupees"
+                                src="https://img.icons8.com/material-sharp/24/000000/rupee.png" />
+                            {{i[3]}}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+    </section>
+
+</body>
+
+</html>

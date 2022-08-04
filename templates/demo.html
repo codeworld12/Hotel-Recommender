@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        #main-branch {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .First-Package {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            /* margin-left: 140px; */
+            margin-bottom: 35px;
+            background-color: #abdeff8f;
+            border-radius: 35px 5px 35px 5px;
+            box-shadow: 4px 4px 0px 0px #bebee5;
+            width: 1030px;
+            height: 310px;
+        }
+
+        .top-in {
+            display: flex;
+            border-radius: 35px 0px 35px 0px;
+            background-color: #188ccb;
+            margin: 15px;
+            height: 282px;
+            width: 1000px
+        }
+
+        #pack {
+            height: 247px;
+            width: 374px;
+            margin: 18px 0px 18px 18px;
+            border-radius: 25px 5px 25px 5px;
+        }
+
+        .top {
+            letter-spacing: 00.2rem;
+            font-size: 25px;
+        }
+
+        .head-line {
+            display: flex;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 600;
+            margin-top: 12px;
+        }
+
+        .top-rating {
+            color: #fbff00;
+            margin-left: 152px;
+            font-size: 18px;
+        }
+
+        .left-side1 {
+            display: flex;
+            float: left;
+        }
+
+        #star {
+            margin: 23px 0px 0px 5px;
+        }
+
+        #bed {
+            padding: 15px 36px 22px 45px;
+        }
+
+        .left-side2 {
+            margin: 70px 7px 0px -255px;
+            display: flex;
+            float: left;
+            flex-direction: row;
+        }
+
+        .left-sidd2 {
+            margin: 70px 7px 0px -270px;
+            display: flex;
+            float: left;
+            flex-direction: row;
+        }
+
+        #Wi {
+            margin: 88px 0px 0px 130px;
+        }
+
+        #wifi {
+            padding: 8px 5px 10px 10px;
+        }
+
+        .left-side3 {
+            margin: 21px 0px -84px 40px;
+        }
+
+        #beach {
+            margin: 36px 0px 0px 128px;
+        }
+
+        #location {
+            padding: 2px 5px 10px 10px;
+        }
+
+        .roo {
+            display: flex;
+            float: right;
+            margin-left: 478px;
+            flex-direction: column;
+        }
+
+        .right-side1 {
+            display: flex;
+            align-items: center;
+            margin-top: -174px;
+            margin-bottom: 133px;
+        }
+
+        .right-side2 {
+            background-color: #cce4ff;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 5px;
+            letter-spacing: normal;
+            color: #372599;
+        }
+
+        /* STARTING NEW */
+        .container {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding-bottom: 60px;
+            /* background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(https://source.unsplash.com/random/200x200?sig=incrementingIdentifier) no-repeat; */
+            /* background: linear-gradient(rgba(0,0,0,.3)), url(https://source.unsplash.com/random) no-repeat;  */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container.content {
+            text-align: center;
+
+        }
+
+        .container.content h1 {
+            font-size: 40px;
+            padding: 5px 0;
+        }
+
+        .container.content button {
+            height: 50px;
+            width: 200px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        #btnx{
+            font-size: 18px;
+    font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="main-branch">
+        <div class="container">
+            <div class="content">
+                <h1>The total hotel are available is</h1>
+                <div class="First-Package">
+                    <div class="top-in">
+                        <div class="top-imag">
+                            <img src="/static/images/MUMBAI.jpg" id="pack" alt="Rest palce">
+                        </div>
+                        <div class="top">
+                            <p class="head-line">hotel</p>
+                            <p class="top-rating"> rating</p>
+                            <p class="left-side1">
+                                <img id="bed" src="https://img.icons8.com/ios/40/000000/4-star-hotel--v2.png" />
+                                <span id="star">
+                                    Discount
+                                </span>
+                            </p>
+                            <p class="left-side2">
+                                <img id="wifi" src="https://img.icons8.com/ios/40/000000/wifi.png" />
+                            <p id="Wi">wifi</p>
+                            </p>
+                            <p class="left-side3">
+                                <img id="location" src="https://img.icons8.com/ios/35/000000/marker--v1.png" />
+                            <p id="beach">beach</p>
+                            </p>
+                            <div class="roo">
+                                <p class="right-side1"><img id="rupees"
+                                        src="https://img.icons8.com/material-sharp/24/000000/rupee.png" />
+                                    rupees</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="btnx" onclick="refresh()">Random</button>
+                </div>
+            </div>
+    </section>
+
+    <!-- Old -->
+    <!-- <div class="container">
+        <div class="content">
+            <h1>God mrng</h1>
+            <button onclick="refresh()">Random</button>
+        </div>
+    </div> -->
+    <script>
+        function refresh() {
+            window.location.reload();
+        }
+        // setInterval(refresh,10000);
+    </script>
+</body>
+
+</html>

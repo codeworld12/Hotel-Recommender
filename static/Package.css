@@ -1,0 +1,136 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+#main-branch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.First-Package {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    /* margin-left: 140px; */
+    margin-bottom: 35px;
+    background-color: #abdeff8f;
+    border-radius: 35px 5px 35px 5px;
+    box-shadow: 4px 4px 0px 0px #bebee5;
+    width: 1030px;
+    height: 310px;
+}
+
+.top-in {
+    display: flex;
+    border-radius: 35px 0px 35px 0px;
+    background-color: #188ccb;
+    margin: 15px;
+    height: 282px;
+    width: 1000px
+}
+
+#pack {
+    height: 247px;
+    width: 374px;
+    margin: 18px 0px 18px 18px;
+    border-radius: 25px 5px 25px 5px;
+}
+
+.top {
+    letter-spacing: 00.2rem;
+    font-size: 25px;
+}
+
+.head-line {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+.top-rating {
+    color: #fbff00;
+    margin-left: 152px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.left-side1 {
+    display: flex;
+}
+
+#dis{
+    margin: 2px 8px 8px 24px;
+    height: 45px;
+    width: 45px;
+}
+
+#star {
+    margin: 11px 0px 22px 5px;
+}
+
+#bed {
+    padding: 15px 12px 10px 25px;
+}
+
+.left-side2 {
+    display: flex;
+}
+
+.left-sidd2 {
+    margin: 70px 7px 0px -270px;
+    display: flex;
+    float: left;
+    flex-direction: row;
+}
+
+#bell{
+    margin: 2px 0px 0px 25px;
+    height: 52px;
+    width: 50px;
+}
+#Wi {
+    margin: -46px 1px 0px 87px;
+}
+
+#wifi {
+    padding: 2px 12px 6px 25px;
+}
+
+.left-side3 {
+    display: flex;
+}
+
+#beach {
+    margin: -35px 0px 0px 84px;
+}
+
+#location {
+    padding: 23px 0px 0px 25px;
+}
+
+.roo {
+    display: flex;
+   
+}
+
+.right-side1 {
+    display: flex;
+    align-items: center;
+    margin-top: -325px;
+    margin-left: 488px;
+}
+
+.right-side2 {
+    background-color: #cce4ff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
+    letter-spacing: normal;
+    color: #372599;
+}
